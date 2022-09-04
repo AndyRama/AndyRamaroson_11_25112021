@@ -1,15 +1,22 @@
-// import logo from './logo.svg';
+// React Framework
 import { Routes, Route, Link } from "react-router-dom";
-import '../sass/04_component/_App.scss';
+
+//style by Sass Partials
+import "./main.css";
+
+//components Header && Footer
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 
 function App() {
   return (
     <div className="App">
-      <h1>Welcome to React Router!</h1>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="about" element={<About />} />
-      </Routes>
+      <Navbar/>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="about" element={<About />} />
+        </Routes>
+       <Footer />
     </div>
   );  
 }
@@ -22,9 +29,6 @@ function Home() {
         <h2>Welcome to the homepage!</h2>
         <p>You can do this, I believe in you.</p>
       </main>
-      <nav>
-        <Link to="/about">About</Link>
-      </nav>
     </>
   );
 }
@@ -39,9 +43,6 @@ function About() {
           think?
         </p>
       </main>
-      <nav>
-        <Link to="/">Home</Link>
-      </nav>
     </>
   );
 }
