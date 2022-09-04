@@ -7,11 +7,13 @@ import "./main.css";
 //components Header && Footer
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import Banner from './components/Banner';
 
 function App() {
   return (
     <div className="App">
       <Navbar/>
+      <Banner/>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="about" element={<About />} />
