@@ -1,9 +1,8 @@
 import React from 'react';
+
 import '../sass/04_component/_Navbar.scss'
 import Logo from "../asset/images/Logo.png"
 import { Link } from 'react-router-dom'
-
-
 
 class Navbar extends React.Component {
     render() {

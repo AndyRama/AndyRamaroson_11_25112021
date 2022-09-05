@@ -1,5 +1,5 @@
 // React Framework
-import { Routes, Route, Link } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 
 //style by Sass Partials
 import "./main.css";
@@ -18,7 +18,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="about" element={<About />} />
         </Routes>
-       <Footer />
+       <Footer/>
     </div>
   );  
 }
