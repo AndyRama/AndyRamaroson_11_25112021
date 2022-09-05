@@ -1,7 +1,7 @@
 import React from 'react';
 
-import '../sass/04_component/_Footer.scss'
-import Logo from "../assets/images/LogoFooter.png"
+import './Footer.scss'
+import Logo from "assets/images/LogoFooter.png"
 
 class Footer extends React.Component {
   render() {

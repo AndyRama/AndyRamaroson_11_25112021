@@ -1,6 +1,6 @@
 import React from 'react';
 
-import '../sass/04_component/_Banner.scss'
+import './Banner.scss'
 
 class Banner extends React.Component {
 
