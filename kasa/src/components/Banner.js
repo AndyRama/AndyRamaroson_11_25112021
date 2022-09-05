@@ -7,7 +7,7 @@ class Banner extends React.Component {
   render() {
     return (
       <main>
-        <section className="central-photo">
+        <section className="main-photo">
           <h1>Chez vous, partout et ailleurs</h1>
         </section>
       </main>

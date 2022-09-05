@@ -1,4 +1,4 @@
-.central-photo {
+.main-photo {
   width: 90%;
   height: 192px;
   margin: 0 auto;
@@ -21,7 +21,7 @@
 }
 
 @media screen and (max-width: 650px) {
-  .central-photo>h1 {
+  .main-photo>h1 {
     color: white;
     position: absolute;
     top: 45%;
