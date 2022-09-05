@@ -4,8 +4,9 @@ footer {
   height: 112px;
   padding-top: 24px;
   text-align: center;
+
+  p {
+   color: white;
+  }
 }
 
-footer>p {
-  color: white;
-}

@@ -2,7 +2,7 @@ import React from 'react';
 
 import './Banner.scss'
 
-class Banner extends React.Component {
+class Header extends React.Component {
 
   render() {
     return (
@@ -15,4 +15,4 @@ class Banner extends React.Component {
   }
 }
 
-export default Banner
+export default Header

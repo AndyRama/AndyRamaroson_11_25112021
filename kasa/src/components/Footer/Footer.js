@@ -8,7 +8,7 @@ class Footer extends React.Component {
     return (
       <footer>
         <img src={Logo} alt="Logo" />
-        <p>2021 Kasa. All rights reserved</p>
+        <p>2022 Kasa. All rights reserved</p>
       </footer>
     )
   }
