@@ -31,11 +31,21 @@
   font-size: 19px;
   padding: 8px 0;
   text-decoration: none;
+  border-bottom: 2px solid transparent;
+}
+.home-page:hover,.about:hover {
+  border-bottom: 2px solid #FF6060;
 }
 
 @media screen and (max-width: 650px) {
   .Navbar {
     padding: 16px 0px;
+
+    img {
+      width: auto;
+      height: 32px;
+      padding: 8px;
+    }
   }
 
   .home-page,
@@ -44,16 +54,8 @@
     font-size: 16px;
   }
 
-  .Navbar>img {
-    width: auto;
-    height: 32px;
-    padding: 8px;
-  }
-
   .Nav-Buttons-Wrapper {
     display: flex;
     padding: 16px;
-    padding-top: 0 !important;
-    padding-bottom: 0 !important;
   }
 }
