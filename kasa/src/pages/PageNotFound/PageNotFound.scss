@@ -4,8 +4,8 @@
   text-align: center;
   
   h1 {
-    font-size: 10rem;
-    margin: 0;
+    font-size: 288px;
+    margin: 80px 0;
     color: #FF6060;
   }
   
@@ -16,19 +16,30 @@
 
 .return-to-home {
   color: #FF6060;
-  margin-top: 7rem;
-  
+  margin-top: 122px;  
   a {
     color: #FF6060;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .page-not-found {
+     h1 {
+      font-size: 188px;
+      margin: 80px 0;
+      color: #FF6060;
+    }
   }
 }
 
 @media screen and (max-width: 500px) {
   .page-not-found {
     height: auto;
-  }
-  .return-to-homepage {
-    margin-top: 5rem;
-    margin-bottom: 3rem;
+          
+    h1 {
+      font-size: 96px;
+      margin: 80px;
+      color: #FF6060;
+    }
   }
 }

@@ -46,7 +46,6 @@
   .logements-wrapper {
     display: flex;
     height: auto;
-    width: 335px;
     background-color: white;
     flex-wrap: wrap;
     margin: 10px auto;
@@ -57,7 +56,11 @@
   
   .logement-box {
     justify-content: space-around;
-    width: 335px;
+    height: 255px;
     margin: 10px 0 10px 0;
+
+    p {
+      top: 188px;
+    }
   }
 }
