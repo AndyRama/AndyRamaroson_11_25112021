@@ -9,27 +9,35 @@
   background-size: cover;
   position: relative;
   
- h1 {
+  h1 {
     color: white;
     position: absolute;
-    top: 45%;
+    top: 50%;
     left: 50%;
+    justify-content: center;
     transform: translate(-50%, -50%);
     margin-top: 0;
     font-size: 32px;
+    width: 100%;
+    display: flex;
   }
 }
 
 @media screen and (max-width: 650px) {
-  .main-photo>h1 {
-    color: white;
-    position: absolute;
-    top: 45%;
-    margin-top: 0;
-    font-size: 24px;
-    width: 95%;
-    margin-left: 8px;
-  }
+  .main-photo {
+    height: 111px;
 
+    h1 {
+      color: white;
+      position: absolute;
+      top: 45%;
+      margin-top: 0;
+      font-size: 24px;
+      font-weight: normal;
+      width: 56%;
+      margin-left: 8px;
+      left: 30%;
+    }
+  }
 }
 

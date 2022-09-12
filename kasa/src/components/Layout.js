@@ -5,6 +5,8 @@ import Banner from 'components/Banner/Banner';
 import Footer from 'components/Footer/Footer';
 
 import Home from 'pages/Home/Home';
+// import About from 'pages/About/About';
+import PageNotFound from "pages/PageNotFound/PageNotFound";
 
 function Layout() {
   return (
@@ -14,6 +16,7 @@ function Layout() {
       <Routes>
         <Route path="/" element={<Home />} />
       </Routes>
+        <PageNotFound/>
       <Footer />
     </div>
   );  
