@@ -1,31 +1,54 @@
-// import './About.scss'
-// // import { Link } from "react-router-dom";
-// import { FaAngleDown} from "./assets/FaAngleDown.png"
-// import { FaAngleUp } from "./assets/FaAngleUp.png"
+import React from 'react';
+import './About.scss'
+import FaAngleDown  from "./assets/images/FaAngleDown.png"
+import FaAngleUp  from "./assets/images/FaAngleUp.png"
 
-// function About() {
-//   const isExpanded = this.state.expand;
+class About extends React.Component {
+  state = {
+    expand1: true
+  };
 
-//   return (
-//     <section>
-//       <div className="cover-photo-about"></div>
-//       <ul className="list-wrapper">
-//         <li>
-//           <div className="list-item">
-//             <p>Fiabiliiter</p>
-//             <div className="icon-wrrapper">
-//               {isExpanded ? < FaAngleDown  size="24px" color="white"/> : < FaAngleUp  size="24px" color="white"/>}
-//             </div>
-//             <div className={ isExpanded ? "collapsed-text" : "expanded-text" }>
-//               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In fugiat odit, accusantium eligendi delectus tenetur. Obcaecati asperiores eius cupiditate
-//                  assumenda minus reprehenderit doloremque, facere praesentium fuga porro debitis optio voluptas!
-//               </p>
-//             </div>
-//           </div>
-//         </li>
-//       </ul>
-//     </section>
-//   ) 
-// }
+  handleClickIcon1() { this.setState({ expand1: this.state.expand1})}
+  
+  render() {
+    
+    const isExtension1 = this.state.expand1
 
-// export default About;
+    const ban = document.getElementsByClassName('main-photo')
+    ban.display ="none"
+
+    return (
+      <section>
+        <div className="cover-photo-About"></div>
+
+        <ul className="list-wrapper">
+          <li>
+            {/* First collapsed */}
+            <div className="list-item">
+              <p>Fiabiliter</p>
+              <div className="icon-wrapper" onClick={ () => this.handleClickIcon1 }>
+                { isExtension1 ? < FaAngleDown size="24px" color="white"/> : <FaAngleUp size="24px" color="white"/> }
+              </div>
+            </div>
+            <div className={isExtension1 ? "collapsed-text" : "expanded-text"}>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam magnam molestias aliquam delectus adipisci. Repellendus quis est sit impedit! Fuga, autem laboriosam cum exercitationem nesciunt necessitatibus esse corrupti ratione consequuntur. </p>
+            </div>
+          </li>
+          <li>
+            {/* First collapsed */}
+            <div className="list-item">
+              <p>Respect</p>
+              <div className="icon-wrapper" onClick={ ()=> this.handleClickIcon2 }>
+                { isExtension1 ? <FaAngleDown size="24px" color="white"/> : <FaAngleUp size="24px" color="white"/> }
+              </div>
+            </div>
+            <div className={isExtension1 ? "collapsed-text" : "expanded-text"}>
+              <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore nobis optio ea tempore corporis laboriosam, fugiat inventore praesentium ut magni velit cupiditate sint architecto? Voluptates praesentium inventore explicabo at nostrum? </p>              
+            </div>
+          </li>
+        </ul>
+      </section>
+    );
+  }
+}
+export default About
