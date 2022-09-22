@@ -3,7 +3,8 @@ import Navbar from 'components/Navbar/Navbar';
 
 import Home from 'pages/Home/Home';
 import About from 'pages/About/About';
-import PageNotFound from "pages/PageNotFound/PageNotFound";
+// import PageNotFound from "pages/PageNotFound/PageNotFound";
+import Product  from 'pages/Product/Product';
 
 function Layout() {
 
@@ -13,7 +14,8 @@ function Layout() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/About" element={<About />} />
-        <Route path="*" element={<PageNotFound />} />
+        <Route path="/logement" element={<Product />} />
+        {/* <Route path="*" element={<PageNotFound />} /> */}
       </Routes>
     </div>
   );  

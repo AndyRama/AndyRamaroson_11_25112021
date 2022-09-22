@@ -7,7 +7,7 @@ function Banner() {
   return (
     <main>
       <section className="main-photo">
-        <h1>Chez vous, partout et ailleurs</h1>
+        {/* <h1>Chez vous, partout et ailleurs</h1> */}
       </section>
     </main>
   )
