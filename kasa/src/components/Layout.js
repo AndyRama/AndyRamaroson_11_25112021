@@ -3,8 +3,8 @@ import Navbar from 'components/Navbar/Navbar';
 
 import Home from 'pages/Home/Home';
 import About from 'pages/About/About';
-// import PageNotFound from "pages/PageNotFound/PageNotFound";
-import Product  from 'pages/Product/Product';
+import PageNotFound from "pages/PageNotFound/PageNotFound";
+import SingleProduct  from 'pages/SingleProduct/SingleProduct';
 
 function Layout() {
 
@@ -14,13 +14,11 @@ function Layout() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/About" element={<About />} />
-        <Route path="/logement" element={<Product />} />
-        {/* <Route path="*" element={<PageNotFound />} /> */}
+        <Route path="/logement/:logementId" element={<SingleProduct />} />
+        <Route path="*" element={<PageNotFound />} />
       </Routes>
     </div>
   );  
 }
-
-
 
 export default Layout;

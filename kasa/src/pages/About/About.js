@@ -3,6 +3,7 @@ import './About.scss'
 import Collapse from 'components/Collapse/Collapse';
 import Footer from 'components/Footer/Footer';
 import Banner from 'components/Banner/Banner';
+import imageBanner from "assets/images/BannerAbout.png";
 
 function About() {
 
@@ -28,9 +29,8 @@ function About() {
 
   return (
     <section>
-      <div className="cover-photo-About">
-        <Banner />
-      </div>
+      {/* <div className="cover-photo-About"></div> */}
+      <Banner image={imageBanner} />
       <ul className="list-wrapper">
         {collapse.map((item, index) => (
           <Collapse title={item.title} text={item.text} />
