@@ -38,7 +38,7 @@
 
 .collapsed-text {
   height: 0;
-  width: 80%;
+  width: 85%;
   height: auto;
   margin: 0 auto  ;
   color: #FF6060;
@@ -51,8 +51,8 @@
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 768px) {
   .list-item,.collapsed-text {
-    width: 70%;
+    width: 90%;
   }
 }

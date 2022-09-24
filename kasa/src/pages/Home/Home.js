@@ -11,7 +11,7 @@ function Home() {
 
   return (
     <section>
-       <Banner image={imageBanner} />
+      <Banner image={imageBanner} text="Chez vous, partout et ailleurs"/>
       <div className="logements-wrapper">
         {logements.map((logement, index) => (
           <Link to={`/logement/${logement.id}`} key={logement.id} className="logement-box">

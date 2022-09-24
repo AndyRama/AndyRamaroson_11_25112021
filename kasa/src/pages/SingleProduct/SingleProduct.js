@@ -4,9 +4,10 @@ import { useParams } from "react-router-dom";
 
 import './SingleProduct.scss'
 
-// import heroBanner from 'components/heroBanner/heroBanner';
 import Footer from 'components/Footer/Footer';
 import Collapse from 'components/Collapse/Collapse';
+import Banner from 'components/Banner/Banner';
+import HeroBanner from "assets/images/HeroBanner.png";
 
 
 var logements = require('data/logements.json');
@@ -33,6 +34,7 @@ function SingleProduct() {
     <section>
       <div className="singleproduct">
         {/* "slider picture"  add component slider */}
+        <Banner image={HeroBanner}/>
         <div className="singleproduct__content">
           <div className="singleproduct__information">
             <h1 className="singleproduct__title">{logement.title}</h1>
