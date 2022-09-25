@@ -6,9 +6,9 @@ import './SingleProduct.scss'
 
 import Footer from 'components/Footer/Footer';
 import Collapse from 'components/Collapse/Collapse';
-import Banner from 'components/Banner/Banner';
-import HeroBanner from "assets/images/HeroBanner.png";
+import HeroBanner from 'components/HeroBanner/HeroBanner';
 
+import Banner from "assets/images/HeroBanner.png";
 
 var logements = require('data/logements.json');
 
@@ -16,7 +16,7 @@ function SingleProduct() {
 
   const { logementId } = useParams();
   const logement = logements.find((logement) => logement.id === logementId);
-  // const { title, location, rating, host, equipement, description, pictures } = logement;
+  const { title, location, rating, host, equipement, description, pictures } = logement;
 
   const collapse = [
     {
@@ -33,7 +33,7 @@ function SingleProduct() {
   return (
     <section>
       <div className="singleproduct">
-        <Banner image={HeroBanner}/>
+        <HeroBanner image={Banner} />
         <div className="singleproduct__content">
           <div className="singleproduct__information">
             <h1 className="singleproduct__title">{logement.title}</h1>
