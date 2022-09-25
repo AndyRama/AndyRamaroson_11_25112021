@@ -33,14 +33,11 @@ function SingleProduct() {
   return (
     <section>
       <div className="singleproduct">
-        {/* "slider picture"  add component slider */}
         <Banner image={HeroBanner}/>
         <div className="singleproduct__content">
           <div className="singleproduct__information">
             <h1 className="singleproduct__title">{logement.title}</h1>
             <p className="singleproduct__location">{logement.location}</p>
-            {/* "Tags" add component tags */}
-            {/* "Tags" add component tags */}
             <ul className="list-wrapper">
               {collapse.map((item, index) => (
                 <Collapse title={item.title} text={item.text}/>
