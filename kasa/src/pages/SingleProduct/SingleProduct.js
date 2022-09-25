@@ -7,8 +7,12 @@ import './SingleProduct.scss'
 import Footer from 'components/Footer/Footer';
 import Collapse from 'components/Collapse/Collapse';
 import HeroBanner from 'components/HeroBanner/HeroBanner';
+import Tags from 'components/Tags/Tags';
+import Rating from "components/Rating/Rating";
 
 import Banner from "assets/images/HeroBanner.png";
+import IconStarFull from 'components/Icons/StarFull';
+import IconStarEmpty from 'components/Icons/StarEmpty';
 
 var logements = require('data/logements.json');
 
@@ -38,12 +42,20 @@ function SingleProduct() {
           <div className="singleproduct__information">
             <h1 className="singleproduct__title">{logement.title}</h1>
             <p className="singleproduct__location">{logement.location}</p>
-            <ul className="list-wrapper">
-              {collapse.map((item, index) => (
-                <Collapse title={item.title} text={item.text}/>
+            <div className="singleproduct__tags">
+              {logement.tags.map((tag, index) => (
+                <Tags key={index} getTag={tag} />
               ))}
-            </ul>
+            </div>
           </div>
+          <div className="singleproduct__rating-and-host">
+            <Rating rating={rating} />
+          </div>
+          {/* <ul className="list-wrapper">
+            {collapse.map((item, index) => (
+              <Collapse title={item.title} text={item.text} />
+            ))}
+          </ul> */}
         </div>
       </div>
       <Footer />
