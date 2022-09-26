@@ -3,7 +3,7 @@
   position: relative;
   margin: 20px 0;
   height: 223px;
-  // padding: 0 80px;
+  // margin: 0 80px;
 
   @media screen and (max-width: 768px) {
     height: 167px;
@@ -26,7 +26,7 @@
     top: 0;
     border-radius: 10px;
     height: 100%;
-    width: 79%;
+    width: 100%;
     opacity: 0.3;
     // padding: 0 78px;
   }
@@ -48,7 +48,6 @@
 
 @media screen and (max-width: 650px) {
   .banner {
-
     h1 {
       color: white;
       position: absolute;
@@ -62,3 +61,19 @@
     }
   }
 }
+
+// @media screen and (max-width: 350px) {
+//   .banner {
+//     h1 {
+//       color: white;
+//       position: absolute;
+//       top: 45%;
+//       margin-top: 0;
+//       font-size: 24px;
+//       font-weight: normal;
+//       width: 56%;
+//       margin-left: 8px;
+//       left: 30%;
+//     }
+//   }
+// }

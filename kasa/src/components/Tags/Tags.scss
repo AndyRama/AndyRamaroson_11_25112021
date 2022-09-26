@@ -1,0 +1,33 @@
+.tag {
+  background:  #ff6060;
+  border-radius: 5px;
+  color: white;
+  padding: 3px 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  min-width: 68px;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+
+   @media screen and (max-width: 350px) {
+    padding: 4px 12px;
+    border-radius: 7px;
+  }
+  @media screen and (max-width: 992px) {
+    padding: 5px 14px;
+    border-radius: 10px;
+  }
+
+  &__text {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 500;
+     @media screen and (max-width: 350px) {
+      font-size: 12px;
+    }
+    @media screen and (max-width: 992px) {
+        font-size: 14px;
+    }
+  }
+}
