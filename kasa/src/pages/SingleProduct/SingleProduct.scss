@@ -44,4 +44,13 @@
     display: flex;
     flex-wrap: wrap;
   }
+
+  &__collapse {
+    display: flex;
+    list-style: none;
+  }
+}
+.list-item {
+  width: 512px;
+  position: relative;
 }
