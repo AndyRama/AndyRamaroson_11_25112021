@@ -1,6 +1,6 @@
 .singleproduct {
   
-  margin: 0 5%;
+  // margin: 0 5%;
   color: #ff6060;
 
   &__content {
@@ -46,11 +46,28 @@
   }
 
   &__collapse {
-    display: flex;
-    list-style: none;
-  }
+    @media screen and (max-width: 768px) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 40px;
+    }
+    @media screen and (max-width: 992px) {
+      column-gap: 80px;
+    }
+
+  // &__collapse {
+  //   display: flex;
+  //   list-style: none;
+  // }
 }
-.list-item {
-  width: 512px;
-  position: relative;
+// .list-item {
+//   width: 512px;
+//   position: relative;
 }
+
+// .banner {
+//   height:  167px !important;
+//   margin: 0;
+//   width: 100%;
+
+// }
