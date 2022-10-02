@@ -1,0 +1,19 @@
+.rating {
+  display: flex;
+  align-items: center;
+
+  &__icon {
+    margin-right: 5px;
+    @media screen and (max-width: 768px) {
+      height: 24px;
+    }
+    @media screen and (max-width: 992px) {
+      height: 30px;
+    }
+  }
+}
+
+.rate{
+  float: right;
+  margin-top: 48px;
+}

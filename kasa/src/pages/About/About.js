@@ -1,10 +1,9 @@
 import "./About.scss";
 
+import Banner from "components/Banner/Banner";
+import imageBanner from "assets/images/BannerAbout.png";
 import Collapse from "components/Collapse/Collapse";
 import Footer from "components/Footer/Footer";
-import Banner from "components/Banner/Banner";
-
-import imageBanner from "assets/images/BannerAbout.png";
 
 function About() {
   const collapse = [

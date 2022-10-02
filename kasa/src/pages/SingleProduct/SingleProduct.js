@@ -1,44 +1,60 @@
-import React from "react";
+import React from 'react'
 
-import { useParams } from "react-router-dom";
+import { useParams } from 'react-router-dom'
 
-import "./SingleProduct.scss";
+import './SingleProduct.scss'
 
-import Collapse from "components/Collapse/Collapse";
-import Footer from "components/Footer/Footer";
-import Tags from "components/Tags/Tags";
-import Slide from "components/Slide/Slide";
-
+import Collapse from 'components/Collapse/Collapse'
+import Footer from 'components/Footer/Footer'
+import Tags from 'components/Tags/Tags'
+import Slide from 'components/Slide/Slide'
+import Rating from 'components/Rating/Rating'
 
 function SingleProduct() {
-  var logements = require("data/logements.json");
-  const { logementId } = useParams();
-  const logement = logements.find((logement) => logement.id === logementId);
-  const { title, location, rating, host, equipments, description, pictures } = logement;
+  var logements = require('data/logements.json')
+  const { logementId } = useParams()
+  const logement = logements.find((logement) => logement.id === logementId)
+  const {
+    title,
+    location,
+    rating,
+    host,
+    equipments,
+    description,
+    pictures,
+  } = logement
 
+  console.log(rating)
   return (
     <section>
       <div className="singleproduct">
-        <Slide Photos={pictures}/>
+        <Slide Photos={pictures} />
         <div className="singleproduct__content">
-          <div className="singleproduct__information">
-            <h1 className="singleproduct__title">{title}</h1>
-            <p className="singleproduct__location">{location}</p>
-            <div className="singleproduct__tags">
+          <div className="group-element-left">
+            <h1 className="title">{title}</h1>
+            <p className="location">{location}</p>
+            <div className="tags-list-wrapper">
               {logement.tags.map((tag, index) => (
                 <Tags key={index} getTag={tag} />
               ))}
             </div>
           </div>
-          <div className="singleproduct__collapse">
-            <Collapse title="description" text={description} />
-            <Collapse title="équipement" text={equipments} />
+          <div className="group-elements-right">
+            <div className="name-photo-wrapper">
+              <div className="host-name">{host.name}</div>
+              <img className="host-photo" src={host.picture} alt={host.name} />
+            </div>
+            <Rating rating={rating} />
           </div>
         </div>
       </div>
+      <div className="singleproduct__collapse">
+        <Collapse title="description" text={description} />
+        <Collapse title="équipement" text={equipments} />
+      </div>
       <Footer />
     </section>
-  );
+  )
 }
 
-export default SingleProduct;
+export default SingleProduct

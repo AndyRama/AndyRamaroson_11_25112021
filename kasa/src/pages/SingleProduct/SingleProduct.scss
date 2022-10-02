@@ -1,73 +1,97 @@
 .singleproduct {
-  
-  // margin: 0 5%;
-  color: #ff6060;
+  margin: 0 2%;
 
   &__content {
-    margin-top: 20px;
-    @media screen and (max-width: 992px) {
-      display: flex;
-      justify-content: space-between;
-      margin-bottom: 15px;
-    }
-  }
-
-  &__title {
-    margin: 0;
-    font-size: 36px;
-    font-weight: 500;
-    
-    @media screen and (max-width: 350px) {
-      font-size: 18px;
-    }
-    @media screen and (max-width: 768px) {
-      font-size: 24px;
-    }
-  }
-
-  &__location {
-    font-size: 18px;
-    font-weight: 500;
-
-    @media screen and (max-width: 350px) {
-      font-size: 16px;
-    }
-    @media screen and (max-width: 768px) {
-      margin-top: 0;
-    }
-    @media screen and (max-width: 992px) {
-      font-size: 18px;
-    }
-  }
-
-  &__tags {
     display: flex;
-    flex-wrap: wrap;
+    justify-content: space-between;
   }
 
   &__collapse {
-    @media screen and (max-width: 768px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 40px;
+    list-style: none;
+  }
+  @media screen and (max-width: 992px) {
+    column-gap: 80px;
+  }  
+  
+  .list-item { 
+    @media screen and (max-width: 650px) {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      column-gap: 40px;
+      grid-template-columns: repeat(1, 1fr);
+      
     }
-    @media screen and (max-width: 992px) {
-      column-gap: 80px;
-    }
-
-  // &__collapse {
-  //   display: flex;
-  //   list-style: none;
-  // }
-}
-// .list-item {
-//   width: 512px;
-//   position: relative;
+  }
 }
 
-// .banner {
-//   height:  167px !important;
-//   margin: 0;
-//   width: 100%;
+.group-elements-bottom {
+  display: flex;
+  justify-content: space-between;
+}
+.group-elements-left {
+  display: block;
+}
+
+// .group-elements-right {
 
 // }
+
+.name-photo-wrapper {
+  display: flex;
+}
+
+.title {
+  margin: 10px 0;
+  font-size: 36px;
+  font-weight: 500;
+  color: #ff6060;
+}
+
+.location {
+  color: #ff6060;
+}
+
+.host-photo {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  margin-top: 16px;
+}
+
+.host-name {
+  margin-top: 48px;
+  margin-right: 8px;
+  color: #ff6060;
+  width: 48px;
+}
+
+.tags-list-wrapper {
+  list-style: none;
+  display: flex;
+  padding-left: 0;
+  margin-top: 16px;
+  flex-wrap: wrap;
+}
+
+.tag {
+  background-color: #ff6060;
+  border-radius: 20px;
+  margin-right: 8px;
+  text-align: center;
+  padding: 8px 1rem;
+  color: white;
+  margin: 8px;
+}
+
+.singleproduct {
+
+  &__collapse {
+    @media screen and (max-width: 650px) {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      column-gap: 40px;
+      list-style: none;
+    }
+  }
+}

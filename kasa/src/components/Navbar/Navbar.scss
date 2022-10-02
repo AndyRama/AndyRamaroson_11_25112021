@@ -8,6 +8,7 @@
   background-color: white;
   display: flex;
   justify-content: space-between;
+  padding: 16px 32px;
 }
 
 .Navbar>img {
@@ -21,41 +22,34 @@
   padding: 16px;
 }
 
-.home-page,
-.about {
+.home-page, .about {
   list-style: none;
-  margin: 0 24px;
+  margin: 0 32px;
   color: #FF6060;
   cursor: pointer;
-  font-size: 24px;
+  font-size: 18px;
   padding: 8px 0;
   text-decoration: none;
-  border-bottom: 2px solid transparent;
-  font-family: 'Montserrat';
-}
-.home-page:hover,.about:hover {
-  border-bottom: 2px solid #FF6060;
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 650px){
   .Navbar {
-    padding: 16px 0px;
-
-    img {
+      padding: 16px 0px;
+  }
+  .home-page, .about {
+      margin: 0 8px;
+      font-size: 16px;
+      
+  }
+  .Navbar>img {
       width: auto;
-      height: 36px;
-      // padding: 8px;
-    }
+      height: 32px;
+      padding: 8px;
   }
-
-  .home-page,
-  .about {
-    margin: 0 8px;
-    font-size: 16px;
-  }
-
   .Nav-Buttons-Wrapper {
-    display: flex;
-    padding: 16px;
+      display: flex;
+      padding: 16px;
+      padding-top: 0 !important;
+      padding-bottom: 0 !important;
   }
 }

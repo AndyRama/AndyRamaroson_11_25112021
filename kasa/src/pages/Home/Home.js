@@ -2,8 +2,8 @@ import './Home.scss'
 import { Link } from "react-router-dom";
 
 import Banner from 'components/Banner/Banner';
-import Footer from 'components/Footer/Footer';
 import imageBanner from "assets/images/BannerHome.png";
+import Footer from 'components/Footer/Footer';
 
 var logements = require('data/logements.json')
 
