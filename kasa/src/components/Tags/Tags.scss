@@ -3,14 +3,14 @@
   border-radius: 5px;
   color: white;
   padding: 3px 10px;
-  margin-right: 10px;
   margin-bottom: 10px;
-  min-width: 68px;
+  // min-width: 68px;
+  min-width: 0;
   text-align: center;
   display: flex;
   flex-direction: row;
 
-   @media screen and (max-width: 350px) {
+   @media screen and (max-width: 650px) {
     padding: 4px 12px;
     border-radius: 7px;
   }
@@ -24,7 +24,7 @@
     font-size: 14px;
     font-weight: 500;
     
-    @media screen and (max-width: 350px) {
+    @media screen and (max-width: 650px) {
       font-size: 12px;
     }
     @media screen and (max-width: 992px) {

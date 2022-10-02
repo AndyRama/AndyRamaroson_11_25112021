@@ -15,5 +15,9 @@
 
 .rate{
   float: right;
-  margin-top: 25px;
+  margin-top: 20px;
+
+  @media screen and (max-width: 650px) {
+    float: left;
+  }
 }

@@ -1,12 +1,13 @@
 .singleproduct {
-  margin: 0 5%;
+  margin: 0 3%;
 
   &__content {
     display: flex;
     justify-content: space-between;
 
     @media screen and (max-width: 650px) {
-      display: bloc;
+      display: flex;
+      flex-direction: column;
     }
   }
 
@@ -42,18 +43,12 @@
   display: block;
 }
 
-.group-elements-right {
-  @media screen and (max-width: 650px)  {
-    // display: flex;
-    // flex-direction: row-reverse;
-    // justify-content: space-between;
-    // order: -1;
-  }
-
-}
-
 .name-photo-wrapper {
   display: flex;
+
+  @media screen and (max-width: 650px) {
+    float: right;
+  }
 }
 
 .title {
@@ -61,10 +56,18 @@
   font-size: 36px;
   font-weight: 500;
   color: #ff6060;
+
+  @media screen and (max-width: 650px) {
+    font-size: 18px;
+  }
 }
 
 .location {
   color: #ff6060;
+
+  @media screen and (max-width: 650px) {
+  font-size: 12px;
+  }
 }
 
 .host-photo {
@@ -72,10 +75,16 @@
   width: 64px;
   border-radius: 50%;
   margin-top: 16px;
+
+  @media screen and (max-width: 650px) {
+    margin-top: 0;
+  }
+
+
 }
 
 .host-name {
-  margin-top: 33px;
+  margin-top: 14px;
   margin-right: 10px;
   color: #ff6060;
   width: 55px;
