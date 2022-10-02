@@ -13,6 +13,7 @@
     margin: auto 0;
     color:  white;
     font-size: 24px;
+    text-transform: capitalize;
   }
 }
 
@@ -26,8 +27,8 @@
 .list-wrapper {
   list-style: none;
   display: block;
-  padding-left: 0;
-  margin-bottom: 112px;
+  padding: 0 20px;
+  margin-bottom: 88px;
 
   li {
     margin: 32px 0;
@@ -50,7 +51,27 @@
 }
 
 @media screen and (max-width: 768px) {
-  .list-item,.collapsed-text {
+  .list-item {
+    width: 80%;
+    height: 30px;
+
+    p {
+      font-size: 13px ;
+    }
+  }
+
+  .collapsed-text {
     width: 90%;
+    height: 145px;
+  }
+
+  .collapsed-text p {
+    font-size: 15px;
+  } 
+
+  .icon-wrapper svg {
+    height: 15px!important;
+    width: 11px!important;
+
   }
 }
