@@ -14,12 +14,12 @@ function Collapse(props) {
     <li>
       <div className="list-item" onClick={toggle} >
         <p>{props.title}</p>
-        <div className="icon-wrapper">
-          <IconChevron />
+        <div className={open ? 'reverse icon-wrapper' : 'icon-wrapper'}>
+          <IconChevron  />
         </div>
       </div>
       {open && (
-        <div class="collapsed-text">
+        <div className="collapsed-text">
           <p>{props.text}</p>
         </div>
       )}

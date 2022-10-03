@@ -27,7 +27,7 @@ function About() {
 
   return (
     <section>
-      <Banner image={imageBanner} />
+      <Banner image={imageBanner} page="about" />
       <ul className="list-wrapper">
         {collapse.map((item, index) => (
           <Collapse title={item.title} text={item.text} />

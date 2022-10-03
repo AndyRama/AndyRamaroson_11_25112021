@@ -9,11 +9,19 @@ import Footer from 'components/Footer/Footer'
 import Tags from 'components/Tags/Tags'
 import Slide from 'components/Slide/Slide'
 import Rating from 'components/Rating/Rating'
+import PageNotFound from 'pages/PageNotFound/PageNotFound'
+
 
 function SingleProduct() {
   var logements = require('data/logements.json')
   const { logementId } = useParams()
   const logement = logements.find((logement) => logement.id === logementId)
+  if(!logement) {
+    return(
+      <PageNotFound />
+    )
+  }
+
   const { title, location, rating, host, equipments, description, pictures } = logement
 
   // Equipements content
