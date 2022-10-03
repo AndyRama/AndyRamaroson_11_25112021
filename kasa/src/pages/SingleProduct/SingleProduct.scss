@@ -84,17 +84,22 @@
 }
 
 .host-name {
-  margin-top: 14px;
+  margin-top: 34px;
   margin-right: 10px;
   color: #ff6060;
   width: 55px;
   text-align: right;
+
+  @media screen and (max-width: 650px) {
+    margin-top: 14px;
+  }
+
 }
 
 .tags-list-wrapper {
   list-style: none;
   display: flex;
-  padding-left: 0;
+  margin-left: -10px;
   margin-top: 16px;
 }
 

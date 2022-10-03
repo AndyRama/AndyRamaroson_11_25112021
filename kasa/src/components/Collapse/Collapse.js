@@ -1,6 +1,7 @@
 import './Collapse.scss'
 import { useState } from 'react';
 import IconChevron from 'components/Icons/Chevron';
+// import IconStarFull from 'components/Icons/StarFull';
 
 
 function Collapse(props) {
@@ -9,6 +10,7 @@ function Collapse(props) {
   const toggle = () => {
     setOPen(!open);
   };
+
 
   return (
     <li>

@@ -14,17 +14,19 @@ function SingleProduct() {
   var logements = require('data/logements.json')
   const { logementId } = useParams()
   const logement = logements.find((logement) => logement.id === logementId)
-  const {
-    title,
-    location,
-    rating,
-    host,
-    equipments,
-    description,
-    pictures,
-  } = logement
+  const { title, location, rating, host, equipments, description, pictures } = logement
 
-  console.log(rating)
+  // Equipements content
+  const content = (
+    <ul>
+      {equipments.map((equipment, index) => (
+        <li key={index} className="singleproduct__collapse">
+          {equipment}
+        </li>
+      ))}
+    </ul>
+  )
+
   return (
     <section>
       <div className="singleproduct">
@@ -50,7 +52,7 @@ function SingleProduct() {
       </div>
       <div className="singleproduct__collapse">
         <Collapse title="description" text={description} />
-        <Collapse title="équipement" text={equipments} />
+        <Collapse title="équipement" text={content} />
       </div>
       <Footer />
     </section>

@@ -6,10 +6,6 @@
   width: 90%;
   left: 5%;
 
-  @media screen and (max-width: 650px) {
-    height: 111px;
-  }
-
   &__img {
     border-radius: inherit;
     object-fit: cover;
@@ -44,16 +40,16 @@
 
 @media screen and (max-width: 650px) {
   .banner {
+    height: 111px;
     h1 {
       color: white;
       position: absolute;
-      top: 45%;
-      margin-top: 0;
+      top: 50%;
+      left: 30%;
       font-size: 24px;
       font-weight: normal;
-      width: 56%;
       margin-left: 8px;
-      left: 30%;
+      width: 180px;
     }
   }
 }
