@@ -4,12 +4,27 @@
   overflow: hidden;
   border-radius: 20px;
   position: relative;
+
+  @media screen and (max-width: 1480px) {
+    // width: 95%;
+    height: 320px;
+    overflow: hidden;
+    border-radius: 20px;
+    position: relative;
+    margin: 0 auto;    
+  }  
 }
 
 .photo-box > img {
   width: 100%;
   height: 415px;
   object-fit: cover !important;
+
+  @media screen and (max-width: 650px) {
+    width: 100%;
+    height: 320px;
+    object-fit: cover !important; 
+  }
 }
 
 .left-icon {
@@ -30,14 +45,4 @@
   cursor: pointer;
 }
 
-@media screen and (max-width: 1480px) {
-  .photo-box {
-    // width: 95%;
-    height: 320px;
-    overflow: hidden;
-    border-radius: 20px;
-    position: relative;
-    margin: 0 auto;
-  }
-}
 

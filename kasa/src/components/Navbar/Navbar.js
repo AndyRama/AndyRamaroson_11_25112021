@@ -10,7 +10,6 @@ class Navbar extends React.Component {
       <header className="header">
         <nav className="Navbar">
           <img src={Logo} alt="Logo" />
-
           <div className="Nav-Buttons-Wrapper">
             <Link to="/" className="home-page">Accueil</Link>
             <Link to="/About" className="about">A Propos</Link>
