@@ -17,7 +17,6 @@ class Slide extends Component {
 
   nextSlid() {
     this.setState({ index: (this.state.index + 1) % this.props.Photos.length });
-    // console.log(this.props.Photos.length )
   }
 
   render() {

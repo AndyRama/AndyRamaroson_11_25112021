@@ -3,8 +3,8 @@
   height: auto;
   width: 90%;
   flex-wrap: wrap;
-  justify-content: space-around;
-  align-content: center;
+  justify-content: center;
+  // align-content: center;
   background-color: rgba(226, 226, 224, 0.541);
   margin: 16px auto;
   border-radius: 10px;
@@ -64,10 +64,8 @@
     border-radius: 7px;
     cursor: pointer;
 
-
     .logement-box .p {
       font-size: 18px;
-
     }
   }
 
