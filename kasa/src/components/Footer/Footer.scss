@@ -14,3 +14,15 @@ footer {
   }
 }
 
+@media screen and (max-width: 650px) {
+  footer {
+    img {
+      width: 75px;
+      height: 30px;
+    }
+    
+    p{
+      font-size: 12px!important;
+    }
+  }
+}

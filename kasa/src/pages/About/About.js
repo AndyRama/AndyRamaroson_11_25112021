@@ -1,4 +1,4 @@
-import "./About.scss";
+// import "./About.scss";
 
 import Banner from "components/Banner/Banner";
 import imageBanner from "assets/images/BannerAbout.png";
@@ -27,12 +27,12 @@ function About() {
 
   return (
     <section>
-      <Banner image={imageBanner} page="about" />
+      <Banner image={imageBanner}  page="about"  />
       <ul className="list-wrapper">
         {collapse.map((item, index) => (
           <Collapse title={item.title} text={item.text} />
         ))}
-      </ul>
+      </ul> 
       <Footer />
     </section>
   );

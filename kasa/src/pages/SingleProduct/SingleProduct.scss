@@ -1,5 +1,9 @@
 .singleproduct {
   margin: 0 3%;
+  
+  @media screen and (max-width: 650px) {
+    margin: 0 5%; 
+  }
 
   &__content {
     display: flex;
@@ -66,7 +70,7 @@
   color: #ff6060;
 
   @media screen and (max-width: 650px) {
-  font-size: 12px;
+  font-size: 14px;
   }
 }
 
@@ -87,7 +91,7 @@
   margin-top: 34px;
   margin-right: 10px;
   color: #ff6060;
-  width: 55px;
+  width: 65px;
   text-align: right;
 
   @media screen and (max-width: 650px) {

@@ -1,5 +1,5 @@
 .list-item {
-  width: 80%;
+  width: 90%;
   height: 48px;
   background-color: #FF6060;
   margin: 0 auto;
@@ -15,6 +15,15 @@
     font-size: 24px;
     text-transform: capitalize;
   }
+
+  @media screen and (max-width: 768px) {
+    .list-item {
+      height: 30px;
+    }
+    p {
+      font-size: 13px ;
+    }
+  } 
 }
 
 .icon-wrapper {
@@ -38,7 +47,7 @@
 
 .collapsed-text {
   height: 0;
-  width: 80%;
+  width: 90%;
   height: auto;
   margin: 0 auto  ;
   color: #FF6060;
@@ -52,19 +61,13 @@
 }
 
 @media screen and (max-width: 768px) {
-  .list-item {
-    width: 80%;
-    height: 30px;
+  // .list-item {
+  //   height: 30px;
 
-    p {
-      font-size: 13px ;
-    }
-  }
-
-  .collapsed-text {
-    width: 80%;
-    // height: 145px;
-  }
+  //   p {
+  //     font-size: 13px ;
+  //   }
+  // }
 
   .collapsed-text p {
     font-size: 15px;
@@ -79,5 +82,4 @@
 
 .reverse {
   transform:rotate(180deg) ;
-
 }
