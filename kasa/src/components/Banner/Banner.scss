@@ -4,7 +4,7 @@
   margin: 20px 0;
   width: 90%;
   left: 5%;
-  
+
   &__overlay {
     background-color: black;
     position: absolute;
@@ -37,8 +37,11 @@
     font-weight: 500;
   }
 }
+
 @media screen and (max-width: 768px) {
   .banner{
+    margin: 0 0px;
+    
     h1 {
       color: white;
       position: absolute;
@@ -55,6 +58,7 @@
 @media screen and (max-width: 650px) {
   .banner {
     height: 111px;
+    border-radius: 10px;
 
     &.about {
       height: 223px;

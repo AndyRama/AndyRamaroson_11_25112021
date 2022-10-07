@@ -10,8 +10,9 @@ const Banner = ({ image, text, page }) => {
 
   return (
     <div className={`banner ${bannerClass}`}>
+      <div className="banner__overlay">
       <img src={image} alt="" className="banner__img" />
-      <div className="banner__overlay"></div>        
+        </div>        
       {text ? <h1 className="banner__text">{text}</h1> : null}
     </div>
   );

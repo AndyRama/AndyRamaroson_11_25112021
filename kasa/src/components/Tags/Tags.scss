@@ -2,9 +2,7 @@
   background:  #ff6060;
   border-radius: 5px;
   color: white;
-  padding: 4px 10px;
   margin-bottom: 10px;
-  // min-width: 68px;
   min-width: 0;
   text-align: center;
   display: flex;
@@ -16,7 +14,6 @@
   }
 
    @media screen and (max-width: 650px) {
-    padding: 4px 1px;
     border-radius: 10px;
   }
 
@@ -26,10 +23,7 @@
     font-weight: 500;
     
     @media screen and (max-width: 650px) {
-      font-size: 12px;
-    }
-    @media screen and (max-width: 992px) {
-      font-size: 14px;
+      font-size: 12px !important;
     }
   }
 }

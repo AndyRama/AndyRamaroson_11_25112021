@@ -31,7 +31,7 @@
   margin-bottom: 88px;
   width: 80%;
   position: relative;
-  top: 0%;
+  top: -30px;
   left: 10%;
 
   li {
@@ -63,10 +63,10 @@
 @media screen and (max-width: 768px) {
   .list-item {
     height: 30px!important;
-  }
-
-  p {
-    font-size: 13px!important;
+    
+    p {
+      font-size: 15px!important;
+    }
   }
 
   .collapsed-text p {
@@ -75,12 +75,12 @@
 
   .icon-wrapper svg {
     height: 15px!important;
-    width: 11px!important;
+    width: 14px!important;
   }
 
   .list-wrapper {
     width: 100%;
-    top: 0;
+    top: -16px;
     left: 0;
   }
 }

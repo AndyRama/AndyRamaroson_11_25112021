@@ -8,7 +8,6 @@ import Footer from 'components/Footer/Footer';
 var logements = require('data/logements.json')
 
 function Home() {
-
   return (
     <section>
       <Banner image={imageBanner} text="Chez vous, partout et ailleurs"/>
