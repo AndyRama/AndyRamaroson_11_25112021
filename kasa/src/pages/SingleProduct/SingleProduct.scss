@@ -80,8 +80,6 @@
   @media screen and (max-width: 650px) {
     margin-top: 0;
   }
-
-
 }
 
 .host-name {
@@ -107,10 +105,37 @@
 .tag {
   background-color: #ff6060;
   border-radius: 20px;
-  margin-right: 8px;
   text-align: center;
-  padding: 8px 1rem;
+  padding: 5px 5px;
   color: white;
   margin: 8px;
 }
 
+
+@media screen and (min-width: 768px) {
+  .left-icon svg {
+    width: 48.68px;
+    height: 79.2px;
+    position: relative;
+    left: -50%;
+  }
+
+  .right-icon svg {
+    width: 48.68px;
+    height: 79.2px;
+    position: relative;
+    right: -60%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .left-icon svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .right-icon svg {
+    width: 20px;
+    height: 20px;
+  }
+}
