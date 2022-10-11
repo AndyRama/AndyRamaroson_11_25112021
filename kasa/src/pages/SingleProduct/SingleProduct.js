@@ -13,6 +13,7 @@ import PageNotFound from 'pages/PageNotFound/PageNotFound'
 
 
 function SingleProduct() {
+
   var logements = require('data/logements.json')
   const { logementId } = useParams()
   const logement = logements.find((logement) => logement.id === logementId)
