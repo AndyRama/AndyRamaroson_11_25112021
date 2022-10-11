@@ -5,21 +5,27 @@
   width: 90%;
   left: 5%;
 
+  &.about {
+    height: 100%;
+  }
+  *
   &__overlay {
     background-color: black;
     position: absolute;
     top: 0;
-    border-radius: 25px;
-    height: auto;
+    border-radius: inherit;
+    height:98%;
     width: 100%;
     opacity: 0.3;
+
+    @media screen and (max-width: 768px) {}
   }
   
   &__img {
+    height: 100%;
     border-radius: inherit;
     object-fit: cover;
     width: 100%;
-    height: 223px;
   }
   
   
@@ -41,6 +47,10 @@
 @media screen and (max-width: 768px) {
   .banner{
     margin: 0 0px;
+
+    &.about {
+      height: 100%;
+    }
     
     h1 {
       color: white;

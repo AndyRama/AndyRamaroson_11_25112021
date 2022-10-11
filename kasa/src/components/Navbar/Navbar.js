@@ -1,24 +1,40 @@
-import React from "react";
+import React from 'react'
 
-import "./Navbar.scss";
-import Logo from "assets/images/Logo.png";
-import { Link } from "react-router-dom";
+import './Navbar.scss'
+import Logo from 'assets/images/Logo.png'
+import { Link, useLocation } from 'react-router-dom'
 
-class Navbar extends React.Component {
-  render() {
-    
-    return (
-      <header className="header">
-        <nav className="Navbar">
-          <img src={Logo} alt="Logo" />
-          <div className="Nav-Buttons-Wrapper">
-            <Link to="/" className="home-page" page="home">Accueil</Link>
-            <Link to="/About" className="about">A Propos</Link>
-          </div>
-        </nav>
-      </header>
-    );
-  }
+function Navbar() {
+  const location = useLocation()
+  // console.log(location.pathname);
+
+  return (
+    <header className="header">
+      <nav className="Navbar">
+        <img src={Logo} alt="Logo" />
+        <div className="Nav-Buttons-Wrapper">
+          <Link
+            to="/"
+            className={
+              location.pathname === '/' ? 'home-page active' : 'home-page'
+            }
+            page="home"
+          >
+            Accueil
+          </Link>
+          <Link
+            to="/About"
+            className={
+              location.pathname === '/About' ? 'about active' : 'about'
+            }
+          >
+            A Propos
+          </Link>
+        </div>
+      </nav>
+    </header>
+  )
 }
+// }
 
-export default Navbar;
+export default Navbar
