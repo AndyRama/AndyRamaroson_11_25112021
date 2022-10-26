@@ -1,6 +1,6 @@
 # Kasa
 
-    Projet 11 de la formation | OpenClassrooms 
+    Projet 11 de la formation Développeurd'application-JavaScript React | OpenClassrooms 
 
 **Selected appartment**
 
