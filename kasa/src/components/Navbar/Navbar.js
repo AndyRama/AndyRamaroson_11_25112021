@@ -5,8 +5,7 @@ import Logo from 'assets/images/Logo.png'
 import { Link, useLocation } from 'react-router-dom'
 
 /**
- * @functtion NavBar
- * @param {object} props
+ * function NavBar
  * @property {string} useLocation to navigate between home and about page
  * @returns {Reactnode} jsx injected in DOM
  */

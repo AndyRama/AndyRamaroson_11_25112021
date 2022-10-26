@@ -6,9 +6,10 @@ import IconStarEmpty from 'components/Icons/StarEmpty'
 import IconStarFull from 'components/Icons/StarFull'
 
 /**
- * @function Rating
+ * function Rating
  * @param {object} props
  * @param {integer} props.rating > number of stars
+ * @param {Array} starsArray > display Araay of stars
  * @returns {Reactnode} jsx in DOM html
 */
 

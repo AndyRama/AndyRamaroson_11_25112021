@@ -12,7 +12,7 @@ import Footer from 'components/Footer/Footer';
  * @param {string} props.id > get selection data by its id
  * @param {string} props.title > rental ad title
  * @param {string} props.cover > cover picture url
- * @param {array} rental ad data
+ * @param {array} rental add data
  * @returns {Reactnode} jsx injected in DOM
  */
 

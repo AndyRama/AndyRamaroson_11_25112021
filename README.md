@@ -14,7 +14,7 @@ Refonte totale pour passer à une stack complète en JavaScript avec NodeJS côt
 
 ## Livrables
 
-> Reat App
+> React App
 - code React du projet
 - code React Router pour les routes dans un fichier dédié
 

@@ -3,11 +3,13 @@ import { useState } from 'react';
 import IconChevron from 'components/Icons/Chevron';
 
 /**
- * Function Collapse
+ * Render Function Collapse
+ * @function Collapse
  * @param {object} props
- * @param {boolean} props.isOpen > get item state (open/close)
- * @param {function} props.showContent > handle content toggle render (show/hide) by clicking on button
- * @param {boolean} props.open > get item state (rotate icon)
+ * @param {string} props.title > item title
+ * @param {string} props.content > item content
+ * @param {boolean} props.open > get item state (open/close)
+ * @param {function} props.toggle > toggle render (show/hide) by clicking on button
  * @returns {Reactnode} jsx injected in DOM
  */
 

@@ -4,12 +4,9 @@ import Collapse from "components/Collapse/Collapse";
 import Footer from "components/Footer/Footer";
 
 /**
- * Render "A propos" page
- * @function About
- * @param {Object} props
- * @param {string} props.id > unique key to identify changed, added or removed items
- * @param {string} props.title > item title
- * @param {string} props.id > item content
+ * Render function About
+ * @param {String} props.title > item title
+ * @param {string} props.text > item text
  * @returns {Reactnode} jsx in DOM html
  */
 
