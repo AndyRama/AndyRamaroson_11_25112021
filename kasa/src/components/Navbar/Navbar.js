@@ -4,9 +4,16 @@ import './Navbar.scss'
 import Logo from 'assets/images/Logo.png'
 import { Link, useLocation } from 'react-router-dom'
 
+/**
+ * @functtion NavBar
+ * @param {object} props
+ * @property {string} useLocation to navigate between home and about page
+ * @returns {Reactnode} jsx injected in DOM
+ */
+
+
 function Navbar() {
   const location = useLocation()
-  // console.log(location.pathname);
 
   return (
     <header className="header">
@@ -35,6 +42,5 @@ function Navbar() {
     </header>
   )
 }
-// }
 
 export default Navbar

@@ -5,6 +5,17 @@ import Banner from 'components/Banner/Banner';
 import imageBanner from "assets/images/BannerHome.png";
 import Footer from 'components/Footer/Footer';
 
+/**
+ * @Function Home
+ * @param {object} props
+ * @param {string} props.id > unique key to identify changed, added or removed items
+ * @param {string} props.id > get selection data by its id
+ * @param {string} props.title > rental ad title
+ * @param {string} props.cover > cover picture url
+ * @param {array} rental ad data
+ * @returns {Reactnode} jsx injected in DOM
+ */
+
 var logements = require('data/logements.json')
 
 function Home() {

@@ -1,6 +1,15 @@
 import './Banner.scss'
 import React from "react";
 
+/**
+ * Render Banner component
+ * @param {object} props
+ * @param {string} props.src > background picture url
+ * @param {string} props.alt > picture alt text
+ * @param {string} props.title > banner title (can be different or empty)
+ * @returns {Reactnode} jsx injected in DOM
+*/
+
 const Banner = ({ image, text, page }) => {
 
   let bannerClass = "";
