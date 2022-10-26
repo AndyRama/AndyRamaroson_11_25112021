@@ -5,6 +5,12 @@ import './Rating.scss'
 import IconStarEmpty from 'components/Icons/StarEmpty'
 import IconStarFull from 'components/Icons/StarFull'
 
+/**
+ * @function Rating
+ * @param {object} props
+ * @param {integer} props.rating > number of stars
+ * @returns {Reactnode} jsx in DOM html
+*/
 
 function Rating(props) {
   const ratingNumber = props.rating;

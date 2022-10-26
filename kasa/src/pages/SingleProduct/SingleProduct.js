@@ -11,6 +11,14 @@ import Slide from 'components/Slide/Slide'
 import Rating from 'components/Rating/Rating'
 import PageNotFound from 'pages/PageNotFound/PageNotFound'
 
+/**
+ * Render "Selection" page
+ * @function SingleProduct
+ * @param {object} props
+ * @property {string} urlId > get selection id from props
+ * @property {object} current > data matching with selection
+ * @returns {Reactnode} jsx in DOM html
+ */
 
 function SingleProduct() {
 
@@ -68,4 +76,4 @@ function SingleProduct() {
   )
 }
 
-export default SingleProduct
+export default SingleProduct;

@@ -2,6 +2,12 @@ import './PageNotFound.scss'
 import React, { Component } from 'react';
 import { Link } from "react-router-dom";
 
+/**
+ * Render Error component
+ * @extends Component
+ * @returns {Reactnode} jsx injected in DOM
+ */
+
 class PageNotFound extends Component {
   render() {
     return (

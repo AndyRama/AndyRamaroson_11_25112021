@@ -3,6 +3,16 @@ import imageBanner from "assets/images/BannerAbout.png";
 import Collapse from "components/Collapse/Collapse";
 import Footer from "components/Footer/Footer";
 
+/**
+ * Render "A propos" page
+ * @function About
+ * @param {Object} props
+ * @param {string} props.id > unique key to identify changed, added or removed items
+ * @param {string} props.title > item title
+ * @param {string} props.id > item content
+ * @returns {Reactnode} jsx in DOM html
+ */
+
 function About() {
   const collapse = [
     {

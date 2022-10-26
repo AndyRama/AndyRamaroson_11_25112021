@@ -1,5 +1,13 @@
 import React from "react";
-import "./Tags.scss"
+import "./Tags.scss";
+
+/**
+ * Render Tags component
+ * @extends Component
+ * @param {object} props
+ * @param {array} props.tags > get tag text from corresponding data
+ * @returns {Reactnode} jsx in DOM html
+*/
 
 const Tags =( { getTag}) => {
   return(
