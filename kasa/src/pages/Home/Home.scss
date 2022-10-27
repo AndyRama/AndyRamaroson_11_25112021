@@ -49,7 +49,26 @@
   width: 100%;
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 937px) {
+  .logements-wrapper { 
+    .logement-box {
+      width: 335px;
+      height: 255px;
+      overflow: hidden;
+      position: relative;
+      margin: 16px 0;
+      border-radius: 10px;
+      cursor: pointer;
+
+      .logement-box .p {
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 770px) {
   .logements-wrapper {
     background-color: white;
     padding: 0 0px ;

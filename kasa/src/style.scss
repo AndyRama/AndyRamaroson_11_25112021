@@ -5,9 +5,12 @@
   list-style: none;
   font-family: 'Montserrat', sans-serif;
   box-sizing: border-box;
-  /* max-width: 1440px; */
+  max-width: 1440px;
   -ms-overflow-style: none;
     /* IE and Edge */
     scrollbar-width: none;
     /* Firefox */
+    // position: relative;
+    // left: 2%;
+
 }

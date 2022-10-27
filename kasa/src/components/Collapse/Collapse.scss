@@ -1,5 +1,5 @@
 .list-item {
-  width: 90%;
+  width: 80%;
   height: 48px;
   background-color: #FF6060;
   margin: 0 auto;
@@ -29,10 +29,9 @@
   display: block;
   padding: 0;
   margin-bottom: 88px;
-  width: 80%;
+  width: 90%;
   position: relative;
-  // top: -30px;
-  left: 10%;
+  left: 7%;
 
   li {
     margin: 32px 0;
@@ -41,7 +40,7 @@
 
 .collapsed-text {
   height: 0;
-  width: 90%;
+  width: 80%;
   height: auto;
   margin: 0 auto  ;
   color: #FF6060;
@@ -56,7 +55,7 @@
 
 @media screen and (max-width: 992px){
   .list-item {
-    width: 90%;
+    width: 80%;
   }
 }
 
@@ -87,4 +86,14 @@
 
 .reverse {
   transform:rotate(180deg) ;
+}
+
+@media screen and (max-width:650px) {
+  .list-item {
+    width: 90%;
+  }
+
+  .collapsed-text {
+    width: 90%;
+  }
 }
