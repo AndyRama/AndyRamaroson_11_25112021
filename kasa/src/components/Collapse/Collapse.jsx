@@ -3,8 +3,7 @@ import { useState } from 'react';
 import IconChevron from 'components/Icons/Chevron';
 
 /**
- * Render Function Collapse
- * @function Collapse
+ * Function Collapse
  * @param {object} props
  * @param {string} props.title > item title
  * @param {string} props.content > item content

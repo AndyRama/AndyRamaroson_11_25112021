@@ -3,6 +3,12 @@ import React, { Component } from "react";
 import "./Slide.scss";
 import IconChevron from "components/Icons/Chevron";
 
+/**
+ * Render Slide extends Component
+ * @param {object} props
+ * @returns {Reactnode} jsx in DOM html
+*/
+
 class Slide extends Component {
   state = { index: 0 };
 
@@ -18,9 +24,8 @@ class Slide extends Component {
   nextSlid() {
     this.setState({ index: (this.state.index + 1) % this.props.Photos.length });
   }
-
-  render() {
-    
+  
+  render() {    
     const photos = this.props.Photos;
 
     return (

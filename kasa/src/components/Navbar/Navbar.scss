@@ -15,7 +15,7 @@
   width: auto;
   height: 80px;
   padding: 14px;
-  margin: 15px -15px;
+  margin: 15px 0px;
 }
 
 .Nav-Buttons-Wrapper {
@@ -52,6 +52,11 @@
 
 }
 
+@media screen and (min-width:1500px) {
+  .Navbar>img {
+    margin: 15px 35px;
+  }
+}
 @media screen and (max-width: 650px) {
   
   .header {

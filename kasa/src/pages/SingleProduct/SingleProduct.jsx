@@ -11,15 +11,6 @@ import Slide from 'components/Slide/Slide'
 import Rating from 'components/Rating/Rating'
 import PageNotFound from 'pages/PageNotFound/PageNotFound'
 
-/**
- * function SingleProduct
- * @param {object} props
- * @param {string} props.match.parmas.id > get selection id by matching with url id
- * @property {string} urlId > get selection id from props
- * @property {object} current > data matching with selection
- * @returns {Reactnode} jsx in DOM html
- */
-
 function SingleProduct() {
 
   var logements = require('data/logements.json')

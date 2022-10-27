@@ -5,7 +5,6 @@ import React from "react";
  * Render Banner component
  * @param {object} props
  * @param {string} props.image > background picture url
- * @param {string} props.alt > picture alt text
  * @param {string} props.title > banner title (can be different or empty)
  * @returns {Reactnode} jsx injected in DOM
 */

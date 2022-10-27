@@ -6,7 +6,6 @@ import Home from 'pages/Home/Home';
 import About from 'pages/About/About';
 import PageNotFound from "pages/PageNotFound/PageNotFound";
 import SingleProduct  from 'pages/SingleProduct/SingleProduct';
-// import Footer from 'components/Footer/Footer'
 
 function Layout() {
 
@@ -19,7 +18,6 @@ function Layout() {
         <Route path="/logement/:logementId" element={<SingleProduct />} />
         <Route path="*" element={<PageNotFound />} />
       </Routes>
-      {/* <Footer /> */}
     </div>
   );  
 }
