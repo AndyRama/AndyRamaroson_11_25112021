@@ -4,6 +4,7 @@ import Logo from 'assets/images/Logo.png'
 import { Link, useLocation } from 'react-router-dom'
 
 function Navbar() {
+  
   const location = useLocation()
 
   return (

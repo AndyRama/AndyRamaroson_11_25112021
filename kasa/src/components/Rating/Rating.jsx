@@ -1,7 +1,5 @@
 import React from 'react'
-
 import './Rating.scss'
-
 import IconStarEmpty from 'components/Icons/StarEmpty'
 import IconStarFull from 'components/Icons/StarFull'
 

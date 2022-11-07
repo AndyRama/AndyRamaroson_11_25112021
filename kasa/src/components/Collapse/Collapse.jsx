@@ -6,7 +6,7 @@ import IconChevron from 'components/Icons/Chevron';
  * Function Collapse
  * @param {object} props
  * @param {string} props.title > item title
- * @param {string} props.content > item content
+ * @param {string} props.text > item content
  * @param {boolean} props.open > get item state (open/close)
  * @param {function} props.toggle > toggle render (show/hide) by clicking on button
  * @returns {Reactnode} jsx injected in DOM

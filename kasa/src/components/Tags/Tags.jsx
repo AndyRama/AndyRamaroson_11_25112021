@@ -8,7 +8,7 @@ import "./Tags.scss";
  * @returns {Reactnode} jsx in DOM html
 */
 
-const Tags =( { getTag}) => {
+const Tags =({getTag}) => {
   return(
     <div className="tag" >
       <p className="tag__text">{getTag}</p>
