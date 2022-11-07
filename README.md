@@ -4,7 +4,7 @@
 
 **Selected appartment**
 
-<kbd>![slected appartment](./HomeKasa.png)</kbd>
+<kbd>![selected appartment](./HomeKasa.png)</kbd>
 
 > PROBLEMATIQUE
 Le site de Kasa, plateforme de location de logements entre particuliers (plus de 500 annonces postées par jour), a été codé il y a plus de 10 ans en ASP.NET avec un code legacy important.
