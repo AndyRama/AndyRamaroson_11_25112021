@@ -1,11 +1,11 @@
 import React, { Component } from "react";
-
 import "./Slide.scss";
 import IconChevron from "components/Icons/Chevron";
 
 /**
  * Render Slide extends Component
  * @param {object} props
+ * @param {boolean} props.onClick > get item state (nextSlid/previousSlid)
  * @returns {Reactnode} jsx in DOM html
 */
 
