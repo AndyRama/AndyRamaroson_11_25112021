@@ -40,3 +40,7 @@ Refonte totale pour passer à une stack complète en JavaScript avec NodeJS côt
 ### Learn More
 
 [React documentation](https://reactjs.org/).
+
+## upcoming feature 
+
+- [ ] Application deployment
