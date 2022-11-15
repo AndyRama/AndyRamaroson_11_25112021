@@ -6,6 +6,7 @@ import IconChevron from "components/Icons/Chevron";
  * Render Slide extends Component
  * @param {object} props
  * @param {boolean} props.onClick > get item state (nextSlid/previousSlid)
+ * @param {array} props.pictures >  render all rental pictures
  * @returns {Reactnode} jsx in DOM html
 */
 
