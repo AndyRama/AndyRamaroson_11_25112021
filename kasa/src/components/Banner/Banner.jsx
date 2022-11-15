@@ -18,7 +18,7 @@ const Banner = ({ image, text, page }) => {
 
   return (
     <div className={`banner ${bannerClass}`}>
-      <img src={image} alt="" className="banner__img" />
+      <img src={image} alt="banner" className="banner__img" />
       <div className="banner__overlay"></div>        
       {text ? <h1 className="banner__text">{text}</h1> : null}
     </div>
