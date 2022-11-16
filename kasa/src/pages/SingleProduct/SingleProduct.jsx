@@ -9,6 +9,7 @@ import Footer from 'components/Footer/Footer'
 import Tags from 'components/Tags/Tags'
 import Slide from 'components/Slide/Slide'
 import Rating from 'components/Rating/Rating'
+
 import PageNotFound from 'pages/PageNotFound/PageNotFound'
 
 /**
@@ -22,9 +23,9 @@ import PageNotFound from 'pages/PageNotFound/PageNotFound'
  * @param {string} props.host.picutre > render avatar hoster
  * @param {string} props.descritption > cover picture url
  * 
- * @param {array} props .rating >  display starsArray
- * @param {array} props.equipments > cover picture url
- * @param {array} props.pictures > all pictures for rental
+ * @param {array} props.rating >  display starsArray
+ * @param {array} props.equipments > collapse list of equipement
+ * @param {array} props.pictures > slide all pictures rental
  * @param {array} rental add data
  * @returns {Reactnode} jsx injected in DOM
  */
