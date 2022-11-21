@@ -55,10 +55,10 @@ Refonte totale pour passer à une stack complète en JavaScript avec NodeJS côt
 
 ## fonctionnalité à venir
 
----------------------------
-
 - [ ] Ajouter tout Cover test pour une couverture à 80%
 - [ ] Construire le déploiement de l'application
+
+---------------------------
 
 # Kasa eng
 
@@ -119,5 +119,3 @@ Total redesign to move to a full stack in JavaScript with NodeJS on the Back-end
 
 - [ ] Add all Cover test for 80% coverage
 - [ ] Build Application Deployment
-
----------------------------
