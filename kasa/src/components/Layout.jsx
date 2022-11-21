@@ -1,14 +1,13 @@
-import { Routes, Route } from "react-router-dom";
-import Navbar from 'components/Navbar/Navbar';
-import "style.scss"
+import { Routes, Route } from 'react-router-dom'
+import Navbar from 'components/Navbar/Navbar'
+import 'style.scss'
 
-import Home from 'pages/Home/Home';
-import About from 'pages/About/About';
-import PageNotFound from "pages/PageNotFound/PageNotFound";
-import SingleProduct  from 'pages/SingleProduct/SingleProduct';
+import Home from 'pages/Home/Home'
+import About from 'pages/About/About'
+import PageNotFound from 'pages/PageNotFound/PageNotFound'
+import SingleProduct from 'pages/SingleProduct/SingleProduct'
 
 function Layout() {
-
   return (
     <div className="Layout">
       <Navbar />
@@ -19,7 +18,7 @@ function Layout() {
         <Route path="*" element={<PageNotFound />} />
       </Routes>
     </div>
-  );  
+  )
 }
 
-export default Layout;
+export default Layout

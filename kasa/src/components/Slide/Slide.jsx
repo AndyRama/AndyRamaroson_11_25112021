@@ -1,6 +1,6 @@
-import React, { Component } from "react";
-import "./Slide.scss";
-import IconChevron from "components/Icons/Chevron";
+import React, { Component } from 'react'
+import './Slide.scss'
+import IconChevron from 'components/Icons/Chevron'
 
 /**
  * Render Slide extends Component
@@ -8,26 +8,27 @@ import IconChevron from "components/Icons/Chevron";
  * @param {boolean} props.onClick > get item state (nextSlid/previousSlid)
  * @param {array} props.pictures >  render all rental pictures
  * @returns {Reactnode} jsx in DOM html
-*/
+ **/
 
 class Slide extends Component {
-  state = { index: 0 };
+  state = { index: 0 }
 
   previousSlid() {
-    const nextIndex = this.state.index - 1;
+    const nextIndex = this.state.index - 1
+
     if (nextIndex < 0) {
-      this.setState({ index: this.props.Photos.length - 1 });
+      this.setState({ index: this.props.Photos.length - 1 })
     } else {
-      this.setState({ index: nextIndex });
+      this.setState({ index: nextIndex })
     }
   }
 
   nextSlid() {
-    this.setState({ index: (this.state.index + 1) % this.props.Photos.length });
+    this.setState({ index: (this.state.index + 1) % this.props.Photos.length })
   }
-  
-  render() {    
-    const photos = this.props.Photos;
+
+  render() {
+    const photos = this.props.Photos
 
     return (
       <div className="photo-box">
@@ -39,8 +40,8 @@ class Slide extends Component {
         </div>
         <img src={photos[this.state.index]} alt="Foto" />
       </div>
-    );
+    )
   }
 }
 
-export default Slide;
+export default Slide

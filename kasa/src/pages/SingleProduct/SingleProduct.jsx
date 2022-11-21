@@ -15,14 +15,14 @@ import PageNotFound from 'pages/PageNotFound/PageNotFound'
 /**
  * @Function SingleProduct
  * @param {object} props
- * @param {string} props.id > unique key to identify 
+ * @param {string} props.id > unique key to identify
  * @param {string} props.id > get selection data by its id
  * @param {string} props.title > rental add title
  * @param {string} props.location > rental localisation
  * @param {string} props.host.name > render name hoster
  * @param {string} props.host.picutre > render avatar hoster
  * @param {string} props.descritption > cover picture url
- * 
+ *
  * @param {array} props.rating >  display starsArray
  * @param {array} props.equipments > collapse list of equipement
  * @param {array} props.pictures > slide all pictures rental
@@ -31,18 +31,24 @@ import PageNotFound from 'pages/PageNotFound/PageNotFound'
  */
 
 function SingleProduct() {
-
   var logements = require('data/logements.json')
 
   const { logementId } = useParams()
+
   const logement = logements.find((logement) => logement.id === logementId)
-  if(!logement) {
-    return(
-      <PageNotFound />
-    )
+  if (!logement) {
+    return <PageNotFound />
   }
 
-  const { title, location, rating, host, equipments, description, pictures } = logement
+  const {
+    title,
+    location,
+    rating,
+    host,
+    equipments,
+    description,
+    pictures,
+  } = logement
 
   // Equipements content
   const content = (
@@ -87,4 +93,4 @@ function SingleProduct() {
   )
 }
 
-export default SingleProduct;
+export default SingleProduct
