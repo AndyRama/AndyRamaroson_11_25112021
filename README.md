@@ -53,9 +53,9 @@ Refonte totale pour passer à une stack complète en JavaScript avec NodeJS côt
 - Le lancer sur le port 3001 : `npm run start`
 - Ouvrez [http://localhost:3000](http://localhost:3000) pour l'afficher dans votre navigateur.
 
----------------------------
-
 ## fonctionnalité à venir
+
+---------------------------
 
 - [ ] Ajouter tout Cover test pour une couverture à 80%
 - [ ] Construire le déploiement de l'application
@@ -115,9 +115,9 @@ Total redesign to move to a full stack in JavaScript with NodeJS on the Back-end
 - Run it on port 3001: `npm run start`
 - Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
----------------------------
-
 ## feature coming soon
 
 - [ ] Add all Cover test for 80% coverage
 - [ ] Build Application Deployment
+
+---------------------------
