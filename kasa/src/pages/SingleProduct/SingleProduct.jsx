@@ -22,7 +22,6 @@ import PageNotFound from 'pages/PageNotFound/PageNotFound'
  * @param {string} props.host.name > render name hoster
  * @param {string} props.host.picutre > render avatar hoster
  * @param {string} props.descritption > cover picture url
- *
  * @param {array} props.rating >  display starsArray
  * @param {array} props.equipments > collapse list of equipement
  * @param {array} props.pictures > slide all pictures rental

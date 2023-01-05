@@ -1,10 +1,10 @@
 # Kasa 🇫🇷
 
------------------------------------------
+https://andyrama.github.io/AndyRamaroson_11_25112021/
 
-    Projet 11 de la formation Développeurd'application-JavaScript React | OpenClassrooms 
+------------------------------------------------
 
-    https://andyrama.github.io/AndyRamaroson_11_25112021/
+Projet 11 de la formation Développeurd'application-JavaScript React | OpenClassrooms 
 
 **Selectionner un appartement**
 
@@ -60,11 +60,11 @@ Refonte totale pour passer à une stack complète en JavaScript avec NodeJS côt
 ## fonctionnalité à venir
 
 - [x] Construire le déploiement de l'application
-- [ ] Ajouter tout Cover test pour une couverture à 80%
+- [x] Ajouter tout Cover test pour une couverture à 80%
 
 ---------------------------
 
-# Kasa eng
+# Kasa 🇬🇧
 
     Project 11 of the Application Developer-JavaScript React training | OpenClassrooms
 
